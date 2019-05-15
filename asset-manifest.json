@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.5f98c55a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.069273f8.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.069273f8.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.132fbc8c.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.132fbc8c.js.map",
+    "static/js/2.1178fec6.chunk.js": "/Portfolio/static/js/2.1178fec6.chunk.js",
+    "static/js/2.1178fec6.chunk.js.map": "/Portfolio/static/js/2.1178fec6.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.af0561ec17413a523e982553ad750cc8.js": "/Portfolio/precache-manifest.af0561ec17413a523e982553ad750cc8.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.5f98c55a.chunk.css.map": "/Portfolio/static/css/main.5f98c55a.chunk.css.map",
+    "static/media/Projects.css": "/Portfolio/static/media/weather.58810062.png",
+    "static/media/photo1.png": "/Portfolio/static/media/photo1.95194eb4.png",
+    "static/media/php.png": "/Portfolio/static/media/php.d6f7fa40.png",
+    "static/media/video.mp4": "/Portfolio/static/media/video.16783fe7.mp4"
+  }
+}
