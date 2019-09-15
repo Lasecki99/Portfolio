@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+
+/* Strona główna */
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.background-wrap {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+div.content {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+@keyframes showIntro {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+div.content h1,
+div.content h2 {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  animation: showIntro 3s linear 0.5s both;
+}
+
+div.content h1::selection,
+div.content h2::selection,
+div.content h1 span::selection {
+  color: orange
+}
+
+
+div.content h1 span {
+  color: #FF7E00;
+}
+
+div.content h2 {
+  top: 60%;
+  font-weight: 400;
+}
+
+div.content a {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 15px 25px;
+  border: 2px solid white;
+  color: white;
+  font-size: 35px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+div.content a:hover {
+  color: orange;
+  border-color: orange;
+}
+
+nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: #FF7E00 solid 2px;
+}
+
+div.flex-flag {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  top: 30%;
+  left: 5%;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+i.fa-bars {
+  display: none;
+}
+
+i.fa-times {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+
+nav ul a {
+
+
+  text-align: right;
+  line-height: 40px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  color: orange;
+}
+
+nav ul a.active {
+  color: orange;
+}
+
+footer {
+
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+footer p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+div.area {
+  display: none;
+}
+
+
+
+@media (max-width:1023px) {
+  div.flex-flag {
+    display: flex;
+    min-width: 130px;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  div.area {
+    display: block;
+  }
+
+  .area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height: 100vh;
+
+
+  }
+
+  .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+  }
+
+  .circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+
+
+  .circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+
+  .circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+
+  .circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+
+  .circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+
+  .circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+  }
+
+  .circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+  }
+
+  .circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+
+  .circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+
+  .circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+
+
+
+  @keyframes animate {
+
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+    }
+
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+
+  }
+
+  div.background-wrap video {
+    display: none;
+
+  }
+
+
+  nav {
+    z-index: 1;
+    position: fixed;
+    left: -60%;
+    width: 50vw;
+    height: 100vh;
+    background-color: #F65100;
+    box-shadow: 7px 10px 10px black;
+    transition: 0.3s;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  i.fa-times {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  nav ul a {
+    font-size: 18px;
+    color: white;
+  }
+
+  i.fa-bars {
+    z-index: 1000;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    display: block;
+    font-size: 40px;
+    color: orange;
+    cursor: pointer;
+  }
+
+  i.fa-bars.active {
+    display: none;
+  }
+
+  div.content h1,
+  div.content h2 {
+    font-size: 30px;
+  }
+
+  div.content a {
+    font-size: 20px;
+
+  }
+
+
+  div.flex-flag {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+  }
+
+  div.flex-flag img {
+    position: relative;
+  }
+
+
+}
+
+@media (max-width:440px) {
+
+  div.content h1,
+  div.content h2 {
+    font-size: 25px;
+  }
+
+  div.content a {
+    width: 60%;
+  }
+
+
+}
+
+@media (max-width:340px) {
+  div.content a {
+    width: 70%;
+  }
+}
+
+
+
+@media (max-height:550px) {
+
+  div.content h1,
+  div.content h2 {
+    font-size: 22px;
+  }
+}

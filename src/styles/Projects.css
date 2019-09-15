@@ -1,0 +1,235 @@
+div.projects {
+    margin: 150px 0 0 50px;
+    border-bottom: 2px solid #CF0237;
+    width: 200px;
+
+}
+
+div.projects p.title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 0 0 0;
+}
+
+div.project-wrapper {
+    margin: 50px 0 0 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+div.project-wrapper div.example {
+    z-index: 10;
+    flex-basis: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 70px 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+div.weather {
+    background-image: url("../img/weather.png");
+
+}
+
+div.portfolio {
+    background-image: url("../img/portfolio.png")
+}
+
+div.rock {
+    background-image: url("../img/rock-paper-scissors.png")
+}
+
+div.website {
+    background-image: url("../img/strona.png")
+}
+
+div.banner {
+    background-image: url("../img/banner.png")
+}
+
+div.slider {
+    background-image: url("../img/slider.png")
+}
+
+div.pong {
+    background-image: url("../img/pong.png");
+
+}
+
+div.map {
+    background-image: url('../img/worldmap.png')
+}
+
+div.burger {
+    background-image: url('../img/burger.png')
+}
+
+div.chuck {
+    background-image: url('../img//chuck.png')
+}
+
+div.movie {
+    background-image: url('../img/movie.png')
+}
+
+div.background-projects {
+
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+
+div.background-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 250px;
+    position: relative;
+    border-radius: 20px;
+}
+
+div.background-wrapper p.name {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #FAE772;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.background-wrapper p.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.button-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    justify-content: space-between;
+}
+
+div.button-wrapper p {
+    color: white;
+}
+
+div.button-wrapper i {
+    color: white;
+    transform: translate(150%, 0);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a.solo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+a.solo i {
+    transform: translate(0)
+}
+
+div.text a p,
+div.text a i,
+div.code a p,
+div.code a i,
+div.text-solo a p,
+div.text-solo a i {
+    transition: 0.3s;
+}
+
+div.text-solo {
+    text-align: center;
+    width: 100%;
+}
+
+div.text:hover a p,
+div.text:hover a i {
+    color: #FF7E00;
+}
+
+div.code:hover a p,
+div.code:hover a i {
+    color: #FF7E00;
+}
+
+div.text-solo:hover a p,
+div.text-solo:hover a i {
+    color: #FF7E00;
+}
+
+
+
+
+
+
+
+@media(max-width:1300px) {
+    div.project-wrapper div.example {
+        min-height: 180px;
+        min-width: 330px;
+    }
+}
+
+@media (max-width:1023px) {
+
+
+    nav {
+        z-index: 1000;
+    }
+
+    div.project-wrapper div.example {
+        flex-basis: 50%;
+        /* width: 100px; */
+        /* height: 100px; */
+
+    }
+
+    div.project-wrapper {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    div.projects {
+        width: 200px;
+    }
+
+    div.project-wrapper div.example {
+        min-height: 180px;
+        min-width: 330px;
+    }
+
+}
+
+@media (max-width:500px) {
+    div.projects {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.projects p.title {
+        text-align: center;
+    }
+
+    div.project-wrapper {
+        width: 100%;
+        margin-left: -25px;
+    }
+
+
+}

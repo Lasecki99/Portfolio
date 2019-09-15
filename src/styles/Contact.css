@@ -1,0 +1,140 @@
+div.border-contact h2.contact {
+    border-bottom: 2px solid #CF0237;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2.contact {
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0 0;
+}
+
+div.contact-first {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+div.contact-first div {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+div.contact-first div p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+div.contact-first div img {
+    transition: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    transform-origin: 50% 50%
+}
+
+p.find-me {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #CF0237 2px solid;
+
+}
+
+
+div.contact-second {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+div.contact-second div {
+    padding: 50px 0;
+    margin-bottom: 50px
+}
+
+div.contact-second div img {
+    cursor: pointer;
+    transition: 0.4s;
+    transform-origin: 50% 50%
+}
+
+div.contact-first div img:hover {
+    transform: rotate(-360deg) scale(1.5)
+}
+
+
+div.contact-second div img:hover {
+    transform: rotate(360deg) scale(1.5)
+}
+
+div.photo {
+    text-align: center;
+}
+
+div.photo img {
+    margin-top: 40px;
+    max-width: 300px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+
+div.photo img:hover {
+    transform: scale(1.25)
+}
+
+@media (max-width:1023px) {
+
+    div.border-contact {
+        transform: translate(40px, 0)
+    }
+
+    div.border-contact h2.contact {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h2.contact {
+        text-align: center;
+        padding: 50px 0 0;
+    }
+
+
+
+
+    div.contact-first {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    div.contact-second {
+        flex-direction: column;
+        width: 50%;
+
+    }
+
+    div.contact-second a {
+        margin: 0 auto;
+    }
+
+    div.border-contact {
+        width: 100%;
+        margin-left: -45px;
+    }
+
+
+    div.border-contact h2.contact {
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+
+
+
+}
