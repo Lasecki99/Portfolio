@@ -8,35 +8,22 @@ import sass from '../img/sass.png'
 import jquery from '../img/jquery.png'
 import git from '../img/git.png'
 import router from '../img/router.png'
-import node from '../img/node.png'
 import php from "../img/php.png"
-import java from "../img/java.png"
 import redux from "../img/redux.png"
 import firebase from '../img/firebase.png'
 
-const About = (props) => {
-    const description = props.isEnglish ? <p>My name is <span>Marcin Lasecki</span>, and I am a <span>junior front-end developer.</span> I am looking for my first job in which I could <span>improve</span> my skills and <span>learn</span> new programming technologies. </p> : <p>Nazywam się <span>Marcin Lasecki </span>i jestem <span>junior front-end developerem.</span> Poszukuję swojej pierwszej pracy, w której mógłbym <span>rozwijać</span> swoje umiejętności i <span>uczyć się</span> nowych technologii programistycznych.</p>
-
-    const description2 = props.isEnglish ? <p className="tech">Technologies used in my projects </p> : <p className="tech">Technologie, których używam w moich projektach </p>
-
-    const description3 = props.isEnglish ? <p className="tech">Technologies that I am currently learning</p> : <p className="tech">Technologie, których obecnie się uczę</p>
-
-    const description4 = props.isEnglish ? <p>About me</p> : <p>O mnie</p>
+const About = () => {
     return (
         <div className="paper">
-
             <div className="wrapper">
                 <div className="about-me">
-                    {description4}
+                    <p>About me</p>
                 </div>
-
                 <div className="description">
-                    {description}
+                    <p>My name is <span>Marcin Lasecki</span>, and I am a <span>junior front-end developer</span> at <span>Pearson IOKI</span> in Poznań.</p>
                 </div>
             </div>
-
-
-            {description2}
+            <p className="tech">Technologies used in my projects</p>
             <div className="tech-box">
                 <span className="up-left"></span>
                 <span className="left-up"></span>
@@ -46,9 +33,6 @@ const About = (props) => {
                 <span className="left-down"></span>
                 <span className="down-right"></span>
                 <span className="right-down"></span>
-
-
-
                 <div className="html">
                     <img src={html} alt="" />
                     <p>Html</p>
@@ -64,12 +48,10 @@ const About = (props) => {
                 <div className="react">
                     <img src={react} alt="" />
                     <p>React</p>
-
                 </div>
                 <div className="sass">
                     <img src={sass} alt="" />
                     <p>Sass</p>
-
                 </div>
                 <div className="jquery">
                     <img src={jquery} alt="" />
@@ -91,15 +73,9 @@ const About = (props) => {
                     <img src={firebase} alt="" />
                     <p>Firebase</p>
                 </div>
-
-
-
-
-
             </div>
-            {description3}
+            <p className="tech">Technologies that I am currently learning</p>
             <div className="now-learning">
-
                 <span className="up-left"></span>
                 <span className="left-up"></span>
                 <span className="up-right"></span>
@@ -108,27 +84,12 @@ const About = (props) => {
                 <span className="left-down"></span>
                 <span className="down-right"></span>
                 <span className="right-down"></span>
-
-
-                <div className="node" >
-                    <img src={node} alt="" />
-                    <p>NodeJS</p>
-                </div>
                 <div className="php">
                     <img src={php} alt="" />
                     <p>PHP</p>
                 </div>
-                <div className="java">
-                    <img src={java} alt="" />
-                    <p>Java</p>
-                </div>
-
             </div>
-
-
             <div className="empty"></div>
-
-
         </div>
     );
 }
