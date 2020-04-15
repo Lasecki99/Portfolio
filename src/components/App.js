@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useRef } from 'react';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom'
 import '../styles/App.css';
 import Home from './Home'
@@ -6,32 +6,34 @@ import About from './About'
 import Projects from "./Projects"
 import Contact from './Contact'
 
-class App extends Component {
-   handleOpenNavigation = () => {
-      document.querySelector('nav').classList.toggle('active');
-      document.querySelector("i.fa-bars").classList.toggle('active');
+const App = () => {
+   const nav = useRef(null);
+   const openNavbarIcon = useRef(null);
+
+   const handleOpenNavigation = () => {
+      nav.current.classList.toggle('active');
+      openNavbarIcon.current.classList.toggle('active');
    }
 
-   handleCloseNavigation = () => {
-      document.querySelector('nav').classList.toggle('active');
-      document.querySelector("i.fa-bars").classList.toggle('active');
+   const handleCloseNavigation = () => {
+      nav.current.classList.toggle('active');
+      openNavbarIcon.current.classList.toggle('active');
    }
 
-   render() {
       return (
          <BrowserRouter>
             <>
-               <nav>
+               <nav ref={nav}>
                   <ul>
-                     <NavLink onClick={this.handleCloseNavigation} to="/" exact></NavLink>
-                     <NavLink onClick={this.handleCloseNavigation} to="/Portfolio" exact>Home</NavLink>
-                     <NavLink onClick={this.handleCloseNavigation} to="/about">About</NavLink>
-                     <NavLink onClick={this.handleCloseNavigation} to="/projects">Projects</NavLink>
-                     <NavLink onClick={this.handleCloseNavigation} to="/contact">Contact</NavLink>
+                     <NavLink onClick={handleCloseNavigation} to="/" exact></NavLink>
+                     <NavLink onClick={handleCloseNavigation} to="/Portfolio" exact>Home</NavLink>
+                     <NavLink onClick={handleCloseNavigation} to="/about">About</NavLink>
+                     <NavLink onClick={handleCloseNavigation} to="/projects">Projects</NavLink>
+                     <NavLink onClick={handleCloseNavigation} to="/contact">Contact</NavLink>
                   </ul>
-                  <i onClick={this.handleCloseNavigation} className="fas fa-times"></i>
+                  <i onClick={handleCloseNavigation} className="fas fa-times"></i>
                </nav>
-               <i onClick={this.handleOpenNavigation} className="fas fa-bars"></i>
+               <i onClick={handleOpenNavigation} ref={openNavbarIcon} className="fas fa-bars"></i>
                <section>
                   <Route path="/Portfolio" component={Home} />
                   <Route path="/" exact component={Home} />
@@ -39,11 +41,10 @@ class App extends Component {
                   <Route path="/projects" component={Projects} />
                   <Route path="/contact" component={Contact} />
                </section>
-               <footer><p>Marcin Lasecki &copy; 2019</p></footer>
+               <footer><p>Marcin Lasecki &copy; 2020</p></footer>
             </>
          </BrowserRouter>
       );
-   }
 }
 
 export default App;

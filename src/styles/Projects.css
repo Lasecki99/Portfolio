@@ -78,11 +78,14 @@ div.movie {
     background-image: url('../img/movie.png')
 }
 
+div.spotify {
+    background-image: url('../img/spotify.png');
+}
+
 div.background-projects {
 
     background-color: rgba(0, 0, 0, 0.7)
 }
-
 
 div.background-wrapper {
     background-color: rgba(0, 0, 0, 0.7);
