@@ -2,7 +2,6 @@ body {
     background-color: #DADADA;
 }
 
-
 div.paper {
     width: 80vw;
     background-color: white;
@@ -43,8 +42,6 @@ div.description p {
 div.description p span {
     font-weight: bold;
 }
-
-
 
 div.paper p.tech {
     margin-top: 100px;
@@ -125,7 +122,6 @@ span.right-down {
     height: 20px;
 }
 
-
 div.tech-box {
     display: flex;
     width: 70%;
@@ -174,13 +170,6 @@ div.empty {
     height: 100px;
 }
 
-div.firebase {
-    padding-top: 20px;
-}
-
-
-
-
 @media (max-width:1380px) {
     div.description {
         font-size: 24px;
@@ -215,9 +204,7 @@ div.firebase {
     }
 }
 
-
 @media (max-width:1023px) {
-
     body {
         background-color: white;
     }
@@ -282,7 +269,6 @@ div.firebase {
 }
 
 @media (max-width:550px) {
-
     div.paper p.tech {
         font-size: 20px;
     }
@@ -314,7 +300,6 @@ div.firebase {
 }
 
 @media (max-width:450px) {
-
     div.description {
         width: 200px;
     }
@@ -369,6 +354,4 @@ div.firebase {
     footer p {
         font-size: 15px;
     }
-
-
 }
