@@ -87,12 +87,5 @@ export const projectsTab = [
     desc: 'Scroll Animation made in JQuery.',
     codeLink: 'https://github.com/Lasecki99/Scroll-Animation',
     liveLink: 'https://lasecki99.github.io/Scroll-Animation/',
-  },
-  {
-    id: 11,
-    name: 'Spotify App',
-    desc: 'Simple app integrated with Spotify API. Created in React & Redux.',
-    codeLink: 'https://github.com/Lasecki99/Spotify-app',
-    liveLink: 'https://lasecki99.github.io/Spotify-app/',
-  },
+  }
 ];
