@@ -130,10 +130,6 @@ span {
   text-decoration: none;
 }
 
-a:nth-of-type(1) {
-  text-decoration: line-through;
-}
-
 .email-link {
   margin-left: 0.4rem;
 }
